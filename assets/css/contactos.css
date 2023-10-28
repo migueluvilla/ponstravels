@@ -1,0 +1,73 @@
+.contenedor-form {
+    width: 100%;
+    /* background-color: chartreuse; */
+    display: flex;
+    justify-content: center;
+}
+.formulario {
+    /* background-color: coral; */
+    width: 50%;
+}
+
+.formulario form {
+    margin-top: 20px;
+    background-color: white    
+}
+
+.formulario form fieldset {
+    border: 1px solid #000;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    margin:10px;
+    padding: 0px 20px;
+}
+
+
+.formulario form fieldset legend {
+    padding: 15px;
+}
+.formulario form fieldset legend strong {
+    font-size: 1.5em;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px var(--orangelogolight);
+}
+.formulario form fieldset legend b {
+    padding-top: 0;
+    margin-top: 0;
+}
+.formulario form fieldset label {
+    margin-left: 0;
+    padding: 0;
+}
+
+.formulario form fieldset.checkes label {
+    margin-bottom: 10px;
+    padding-left: 50px;
+}
+.formulario form fieldset.checkes p {
+    margin-top: 0;
+}
+
+.formulario form fieldset input,
+.formulario form fieldset textarea {
+    /* width: 100%; */
+    /* outline: none; */
+    margin: 5px;
+    padding: 0;
+}
+
+.formulario form fieldset input[type="checkbox"]{
+   gap: 20px;
+}
+
+  input[type="submit"] {
+   transform: translate(2.2%);
+   padding: 3px;
+   margin-top: 0.6rem;
+   font-family: cursive;
+   font-weight: bold;
+  }
+

@@ -1,0 +1,166 @@
+:root {
+    --orange: #ff6600;
+    --hoverPons: #ff6600;
+    --dorado: #D3BF74;
+    --orangelogodark: rgb(239,52,37);
+    --orangelogolight: rgb(253,184,19);
+    --white:#ffffff;
+    --bg-white: #ffffffd5;
+    --black: #000;
+}
+.container-card {
+    display: flex;
+    justify-content: space-around;
+    gap: 3%;
+    flex-wrap: wrap;
+}
+
+/* .vtnmodal {
+    width: 98%;
+    height: auto;
+    background: var(--bg-white);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px var(--black);
+    backdrop-filter: blur(5.8px);
+    -webkit-backdrop-filter: blur(5.8px);
+    border: 1px solid var(--orangelogodark);
+} */
+
+.card-promo {
+    width: 360px;
+    margin-bottom: 10px;     
+    border: 1px solid var(--black);
+    border-radius: 15px;  
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    box-sizing: border-box;
+    box-shadow: 3px 3px 5px var(--black);
+    word-wrap: break-word;
+    background: var(--bg-white);
+    border-radius: 16px;
+    /* box-shadow: 0 4px 30px var(--black); */
+    backdrop-filter: blur(5.8px);
+    -webkit-backdrop-filter: blur(5.8px);
+    border: 1px solid var(--orangelogodark);
+}
+
+.card-promo:hover {
+    transition: 1s in-ease-out;
+    box-shadow: 0 0 20px var(--orangelogolight);
+    transition: 0.3s ease-in-out;
+    -webkit-transition: 1s in-ease-out;
+    -moz-transition: 1s in-ease-out;
+    -ms-transition: 1s in-ease-out;
+    -o-transition: 1s in-ease-out;
+    border: 1px solid var(--orangelogodark);
+    cursor: pointer;
+}
+
+.card-promo .image {
+    width: 100%;
+}
+
+.card-promo .image img{
+    width: 100%;
+    height: 200px;
+    border-radius: 15px 15px 0px 0px;
+    -webkit-border-radius: 15px 15px 0px 0px;
+    -moz-border-radius: 15px 15px 0px 0px;
+    -ms-border-radius: 15px 15px 0px 0px;
+    -o-border-radius: 15px 15px 0px 0px;
+}
+.precio_card {
+    /* position: relative;
+    top: 220px; */
+    background-color: var(--bg-white);
+    border-radius: 18px 18px 0 0;
+    top: 170px;
+    color: var(--hoverPons);
+    display: flex;
+    flex-direction: row;
+    font-size: 16px;
+    font-weight: 600;
+    gap: 8px;
+    padding: 6px 10px;
+    position: absolute;
+    right: 16px;
+}
+
+mb-icon {
+    padding: 0;
+    margin: 0;
+    width: .8em;
+}
+svg#packages {
+    width: 40px;
+    position: absolute;
+    top: 8px;
+}
+.caja .precio_card_texto {
+    font-size: 0.8em;
+    font-weight: bold;
+    color: var(--hoverPons);
+    text-transform: uppercase;
+    margin-left: 0px;
+    padding-left: -5px;
+}
+.card-promo .name {
+    position: relative;
+    margin-top: 0px;  
+    color: var(--black);
+
+}
+.card-promo .details{ 
+    position: relative;    
+    color: var(--black);
+    /* margin-top: -10px; */
+}
+
+.card-promo .name,
+.card-promo .details{ 
+    font-size: 0.8em;
+    margin-bottom: 0;    
+    padding-left: 8px;
+    padding-right: 8px;  
+    
+}
+
+.name {
+    color: var(--black);
+    font-size: 1.5em;
+    margin-bottom: 0;
+}
+.card-promo .details p {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+hr {
+    margin: 10px;
+    padding: 0;
+}
+strong.promo-precio {
+    font-size: 1.5em;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    margin-left: 15px;
+    color: var(--hoverPons);
+    text-shadow: 1px 1px 1px var(--black);
+}
+span.tasas {
+    margin-top: 0;
+    padding: 0;
+    font-size: .8em;
+}
+
+
+/* PUNTOS DE QUIEBRE MEDIA QUERIS */
+@media screen and (max-width: 500px) {
+    .card-promo {
+        width: 100%;
+    }
+
+
+}

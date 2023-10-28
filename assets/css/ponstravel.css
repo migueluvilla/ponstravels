@@ -1,0 +1,576 @@
+:root {
+    --orange: #ff6600;
+    --hoverPons: #ff6600;
+    --dorado: #D3BF74;
+    --orangelogodark: rgb(239,52,37);
+    --orangelogolight: rgb(253,184,19);
+    --white:#ffffff;
+    --bg-white: rgba(255, 255, 255, 0.7);
+    --black: #000;
+}
+
+body {
+    /* background-image: url('../../images/web/mosaico.avif');  */
+    padding: 0 30px;
+}
+
+#wrapper0,
+section.section {
+    margin: 0;
+    padding: 0px;
+    height: 100%;
+    /* background-color:   var(--orange); */
+}
+
+.li-menu {
+    font-size: 3em;
+    text-align: center;
+    color: var(--black);
+    text-shadow: 1px 1px 3px var(--orangelogolight);
+    letter-spacing: normal;
+    margin-bottom: 0;
+}
+section.section p strong {
+    margin-left: 1em;
+    font-size: 1.5em;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+header#header{
+    background-color: var(--white);
+    /* background-color:   var(--dorado); */
+    width: 97%;
+    position: fixed;
+    height: 100px;
+    z-index: 1000;
+
+}
+
+blockquote#header-block,
+blockquote#destino-block {
+    margin: 3em auto 3em auto;
+    padding-left:20px; /*Esta longitud varia de acuerdo al tamaño de la imagen que uses de la comilla abierta*/
+    background: url(../../images/web/comillas-abre.gif) top left no-repeat; /* aquí especificamos donde se encuentra la imagen de nuestra comilla que abre y la ubicamos */
+    background-size: 50px;  
+    border-left: none;
+}    
+blockquote#header-block {
+    width: 80%;    /*El ancho de la cita */
+}
+
+blockquote#destino-block {
+    width: 50%;    /*El ancho de la cita */
+}
+
+blockquote#header-block p.header-parrafo,
+blockquote#destino-block p.header-parrafo {
+    padding-right:20px;
+    background: url(../../images/web/comillas-cierra.gif) bottom right no-repeat; /* aquí especificamos donde se encuentra la imagen de nuestra comilla que cierra y la ubicamos */
+    background-size: 50px;
+    font-size: 1.8em;
+    text-align: center;
+    margin-bottom: 0;
+}
+/* width="70px" style="position: relative; top: 10px;" */
+blockquote#header-block p.header-parrafo img,
+blockquote#destino-block p.header-parrafo img {
+    width: 70px;
+    position: relative;
+    top: 10px;
+}
+
+p.section-parrafo {
+    margin-top: 0;
+    padding-top: 0;
+    margin-left: 35px;
+}
+section.alto100vh {
+    padding-top: 163px;
+    height: 100%;
+    background-color: var(--bg-white);
+}
+
+/* section.alto100vh #barra .inner img {
+    background-image: url('../../images/web/panel.png') cover; 
+    width: 100%;
+} */
+section.alto100vh #barra .panel {
+    background-image: url('../../images/web/panel.png'); 
+    background-size: cover;
+    width: 100%;
+    height: 344px;
+    margin-bottom: 0;
+}
+
+section.alto100vh #barra .panel .panel-title {
+    font-size: 4em;
+    margin-bottom: 0;
+    padding-top: .7em;
+}
+
+section.alto100vh #barra .panel .panel-subtitle {
+    font-size: 2em;
+}
+section.alto100vh #barra .panel .panel-title,
+section.alto100vh #barra .panel .panel-subtitle {
+    
+    color: var(--white);   
+    text-align: center;
+    text-shadow: 1px 1px 1px #000;
+    text-shadow: 1px 1px 3px var(--orangelogolight);
+
+}
+.card-group {
+    
+    max-width: 1700px;
+    display: flex;
+    column-gap: 16px;
+    padding: 30px;
+    /* overflow-x: scroll; */
+}
+
+.card {
+    /* margin-top: -20px; */
+    flex: 0 0 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 250px;
+    /* background-image: linear-gradient(85deg, #434343, #262626); */
+    padding: 16px;
+    box-shadow: -10px 0 24px rgba(0, 0, 0, 0.5);
+    /* border: dashed 1px  var(--bg-white); */
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    transition: transform 250ms;
+    -webkit-transition: transform 250ms;
+    -moz-transition: transform 250ms;
+    -ms-transition: transform 250ms;
+    -o-transition: transform 250ms;
+    color: var(--white);
+    text-shadow: 2px 2px 2px var(--black);
+}
+
+.tarjeta1{
+    background: url('../../images/web/argentina/bariloche.jpg') no-repeat center;    
+}
+.tarjeta2{
+    background: url('../../images/web/argentina/humahuaca.png') no-repeat center;    
+}
+.tarjeta3{
+    background: url('../../images/web/argentina/iguazu.png') no-repeat center;    
+}
+.tarjeta4{
+    background: url('../../images/web/argentina/madryn.png') no-repeat center;    
+}
+.tarjeta5{
+    background: url('../../images/web/argentina/salta.png') no-repeat center;    
+}
+.tarjeta6{
+    background: url('../../images/web/argentina/calafate.png') no-repeat center;    
+}
+
+.tarjeta7{
+    background: url('../../images/web/argentina/puente_del_inca.png') no-repeat center;    
+}
+
+.tarjeta1 .h3,
+.tarjeta2 .h3,
+.tarjeta3 .h3,
+.tarjeta4 .h3,
+.tarjeta5 .h3,
+.tarjeta6 .h3,
+.tarjeta7 .h3 {
+    font-weight: bold;
+}
+.tarjeta1 .texto-card,
+.tarjeta2 .texto-card,
+.tarjeta3 .texto-card,
+.tarjeta4 .texto-card,
+.tarjeta5 .texto-card,
+.tarjeta6 .texto-card,
+.tarjeta7 .texto-card {
+    font-weight: normal;
+}
+.card:not(:first-child) {
+    margin-left: -130px;
+}
+
+.card:hover {
+    transform: translate(-8px, -16px) rotate(3deg);
+    -webkit-transform: translate(-8px, -16px) rotate(3deg);
+    -moz-transform: translate(-8px, -16px) rotate(3deg);
+    -ms-transform: translate(-8px, -16px) rotate(3deg);
+    -o-transform: translate(-8px, -16px) rotate(3deg);
+    cursor: pointer;
+}
+
+.card:hover ~ .card {
+    transform: translateX(130px);
+    -webkit-transform: translateX(130px);
+    -moz-transform: translateX(130px);
+    -ms-transform: translateX(130px);
+    -o-transform: translateX(130px);
+}
+#promos,
+#destinos,
+#nosotros,
+#contactos {
+    position: relative;
+    top: -160px;
+}
+section#promos1,
+section#destinos1,
+section#nosotros1,
+section#contactos1 {
+    padding-top: 20px;
+}
+
+
+
+section#promos1 {
+    background-color: var(--white);
+}
+
+section#destinos1 {
+    background-color: var(--bg-white);
+    height: 100%;
+}
+
+section#nosotros1 {
+    background-color: var(--bg-white);
+    height: 100%;
+}
+
+section#contactos1 {
+    background-color:var(--bg-white);
+    background-image: url('../../images/web/mosaico.avif');
+    height: 100%;
+}
+
+/* línea 140 - mauvilla.css */
+a {
+    /* -moz-transition: border-bottom-color 0.2s ease, color 0.2s ease;
+    -webkit-transition: border-bottom-color 0.2s ease, color 0.2s ease;
+    -ms-transition: border-bottom-color 0.2s ease, color 0.2s ease;
+    transition: border-bottom-color 0.2s ease, color 0.2s ease; */
+    text-decoration: none;
+    color: #000;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 1px var(--orangelogolight);
+
+}
+a:hover{
+    color: var(--hoverPons);
+
+}
+
+
+
+.header {
+    width: 100%;
+    margin-top: -160px;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: flex-between;
+    flex-direction: row;
+    gap: 20px;
+}
+.div-logo {
+    margin: 20px;
+    padding: 0 auto;
+    width: 10%;
+    height: 100%;
+    /* background-color: var(--dorado); */
+    /* position: absolute; */
+    /* top: 22px; */
+    
+}
+/* .marca {
+    width: 15%;
+} */
+.menuup {
+    margin-top: 50px;
+    width: 70%;
+}
+.menuup ul li {
+    float: left;
+    list-style-type: none;
+    margin-left: 5%;
+    
+}
+.menuup ul li a i {
+    color: var(--orange) !important;
+} 
+.nav {
+    width: 15%;
+}
+#header .logo .symbol img#logo-pons {
+    display: block;
+    width: 70%;
+    height: 70%;
+    margin-left: 12%;
+    margin-top: -5px;
+}
+
+.jwtitle {
+    color:  #000;
+    font-size: 1em;
+    text-shadow: var(--orangelogolight) 2px 2px 1px;
+    margin-top: -20px;
+    margin-left: 0;
+}
+/* #barra {
+    width: 100%;
+    height: 150px;
+    background-image: url("../../images/web/barra.jpg") cover !important;
+} */
+
+footer {
+    background-color: var(--white);
+    height: 4em;
+}
+section.section-footer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: .5em;
+    
+}
+
+section.section-footer ul li {
+    font-weight: bolder;
+    color: var(--black);
+    text-shadow: 1px 1px 1px var(--orangelogolight);
+
+}
+
+section.section-footer ul li .image img {
+    position: relative;
+    top: 14px;
+}
+
+@media screen and (max-width: 810px) {
+    #header .div-logo .logo .symbol img {
+        display: block;
+        width: 2.5em;
+        height: 2.5em;
+        margin-top: 10px;
+    }
+    .title {
+        margin-top: 15px;
+        font-size: 2em;
+    }
+    #header nav ul li a[href="#menu"] {
+        -webkit-tap-highlight-color: transparent;
+        width: 3em;
+        text-indent: 3em;
+        font-size: 0.8em;
+        margin-top: 15px;        
+    }
+}
+@media screen and (max-width: 736px) {
+    #header .div-logo .logo .symbol img {
+        display: block;
+        width: 2.2em;
+        height: 2.2em;
+        margin-top: -3px;
+
+    }
+    .title {
+        margin-top: -5px;
+        font-size: 1.5em;
+    }
+    #header nav ul li a[href="#menu"] {
+        -webkit-tap-highlight-color: transparent;
+        width: 3em;
+        text-indent: 3em;
+        font-size: 0.8em;
+        margin-top: 15px;        
+    }
+    #logo, #logo1 {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    #header .logo .symbol img#logo-pons {
+        display: block;
+        width: 40%;
+        height: 20%;
+        margin-top: -5px;
+
+    }
+    .title {
+        margin-top: 2px;
+        font-size: 1.2em;
+    }
+    #header nav ul li a[href="#menu"] {
+        -webkit-tap-highlight-color: transparent;
+        width: 3em;
+        text-indent: 3em;
+        font-size: 0.8em;
+        margin-top: 15px;        
+    }
+    .contenedor {
+        display:flex; 
+        justify-content:center; 
+        width:80%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    
+    body {
+        /* background-image: url('../../images/web/mosaico.avif');  */
+        padding: 0px;
+    }
+    .title {
+        font-size: 0.8em;
+    }
+    /* .title .jwtitle {
+        color: rosybrown; 
+        font-size: 15px;
+    } */
+    #header .div-logo .logo .symbol img {
+        display: block;
+        width: 1.8em;
+        height: 1.8em;
+        margin-top: -1px;
+    }
+    .titulo {
+        font-size: 1.5em;
+    }
+
+    #header nav ul li a[href="#menu"] {
+        -webkit-tap-highlight-color: transparent;
+        width: 3em;
+        text-indent: 3em;
+        font-size: 0.8em;
+        margin-top: 15px;        
+    }
+    #logo, #logo1 {
+        display: none;
+    }
+    .contenedor {
+        display:flex; 
+        justify-content:center; 
+        width:90%;
+    }
+    blockquote#header-block,
+    blockquote#destino-block {
+        margin: 1em auto 1em auto;
+        padding-left:10px; /*Esta longitud varia de acuerdo al tamaño de la imagen que uses de la comilla abierta*/
+        /* background: url(../../images/web/comillas-abre.gif) top left no-repeat; aquí especificamos donde se encuentra la imagen de nuestra comilla que abre y la ubicamos */
+        background-size: 20px;  
+        /* border-left: none; */
+    }    
+    blockquote#header-block {
+        width: 75%;    /*El ancho de la cita */
+    }
+
+    blockquote#destino-block {
+        width: 75%;    /*El ancho de la cita */
+    }
+
+    blockquote#header-block p.header-parrafo,
+    blockquote#destino-block p.header-parrafo {
+        padding-right:10px;
+        /* background: url(../../images/web/comillas-cierra.gif) bottom right no-repeat; aquí especificamos donde se encuentra la imagen de nuestra comilla que cierra y la ubicamos */
+        background-size: 20px;
+        font-size: 1.2em;
+        /* text-align: center; */
+        /* margin-bottom: 0; */
+    }
+    /* width="70px" style="position: relative; top: 10px;" */
+    blockquote#header-block p.header-parrafo img,
+    blockquote#destino-block p.header-parrafo img {
+        width: 30px;
+        /* position: relative; */
+        top: 6px;
+    }
+
+    /* header movil */
+
+    section.alto100vh #barra .panel {
+        /* background-image: url('../../images/web/panel.png');  */
+        /* background-size: cover; */
+        /* width: 100%; */
+        margin-top: -165px;
+        height: 200px;
+        /* margin-bottom: 0; */
+    }
+
+    section.alto100vh #barra .panel .panel-title {
+        font-size: 2em;
+        /* margin-bottom: 0; */
+        padding-top: 1.8em;
+    }
+    
+    section.alto100vh #barra .panel .panel-subtitle {
+        font-size: 1em;
+    }
+
+    
+    header#header{       
+        width: 100%;
+        position: static;
+        height: 100px;
+        z-index: 1;
+
+    }
+    .header {
+        /* width: 105%; */
+        margin-top: -60px;
+        margin-bottom: 0;
+        padding: 0;
+        /* background-color: red; */
+        display: flex;
+        justify-content: center;
+        gap: 0px;
+    }
+    .div-logo {
+        /* background-color: var(--dorado); */
+        display: flex;
+        justify-content: center;
+        margin-top: 0px;
+        padding-top: 0px;
+        padding-bottom: -20px;
+        width: 19%;
+    }
+    #header .logo .symbol img#logo-pons {
+        /* display: block; */
+        /* background-image: url('../../images/web/logo_footer.png'); */
+        width: 100%;
+        /* height: 70%;
+        margin-left: 0; */
+        margin-top: 4px;
+        margin-bottom: 0;
+    }
+    .menuup {
+        display: none;
+    }
+    .li-menu {
+        font-size: 1.5em;        
+        text-shadow: 1px 1px 1px var(--orangelogolight);
+        text-align: center;
+    }
+    section.section p {
+        margin-top: 0;
+        padding: 0;
+        text-align: center;
+        font-size: .8em;
+    }
+    section.section p strong {
+        margin-left: .8em;
+        font-size: 1.1em;
+    }
+
+}
